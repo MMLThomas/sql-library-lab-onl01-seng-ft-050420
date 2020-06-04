@@ -5,30 +5,33 @@ CREATE TABLE series (
   subgenre_id INTEGER
   );
   
-  CREATE TABLE series (
+  CREATE TABLE subgenres (
   id INTEGER PRIMARY KEY,
-  title TEXT,
-  author_id INTEGER,
-  subgenre_id INTEGER
+  name TEXT
   );
   
-  CREATE TABLE series (
+  CREATE TABLE authors (
   id INTEGER PRIMARY KEY,
-  title TEXT,
-  author_id INTEGER,
-  subgenre_id INTEGER
+  name TEXT
   );
   
-  CREATE TABLE series (
+  CREATE TABLE books (
   id INTEGER PRIMARY KEY,
   title TEXT,
-  author_id INTEGER,
-  subgenre_id INTEGER
+  year INTEGER,
+  series_id INTEGER
   );
   
-  CREATE TABLE series (
+  CREATE TABLE charecters (
   id INTEGER PRIMARY KEY,
-  title TEXT,
-  author_id INTEGER,
-  subgenre_id INTEGER
+  name TEXT,
+  species TEXT,
+  motto TEXT,
+  author_id INTEGER
+  );
+  
+  CREATE TABLE charecter_books (
+  id INTEGER PRIMARY KEY,
+  book_id INTEGER,
+  charecter_id INTEGER
   );
