@@ -22,7 +22,7 @@ CREATE TABLE series (
   series_id INTEGER
   );
   
-  CREATE TABLE charecters (
+  CREATE TABLE characters (
   id INTEGER PRIMARY KEY,
   name TEXT,
   species TEXT,
